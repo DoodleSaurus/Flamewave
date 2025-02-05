@@ -1,0 +1,108 @@
+/* Stile generale */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Sezioni */
+section {
+    padding: 60px 0;
+}
+
+/* Titoli */
+h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Immagini */
+img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Plan */
+#plan .col-md-3 {
+    padding: 20px;
+    background: #fff;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Team */
+#team .col-md-4 {
+    padding: 20px;
+    background: #f1f1f1;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* Review */
+#review .col-md-4 {
+    padding: 20px;
+    background: #e9ecef;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* Contact */
+#contact .col-md-6 {
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.primarycolorbg{
+    background-color: #e7772b;
+}
+
+.welcome-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #e7772b;
+    padding: 0 10%;
+}
+.welcome-image img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.welcome-text {
+    color: black;
+    padding: 20px;
+    text-align: left;
+}
+.welcome-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.welcome-text p {
+    font-size: 1.2rem;
+}
+.btn-learn {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Plan */
+#plan .col-md-3 {
+    padding: 20px;
+    background: #fff;
+    margin: 10px 0; /* Adjusted margin */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
