@@ -1,4 +1,11 @@
 /* Stile generale */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
@@ -68,18 +75,16 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 80vh;
     background-color: #e7772b;
     padding: 0 10%;
 }
 .welcome-image img {
     width: 100%;
     height: auto;
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
+    border-radius: 0 35px 35px 0;
 }
 .welcome-text {
-    color: black;
     padding: 20px;
     text-align: left;
 }
@@ -90,12 +95,47 @@ img {
 .welcome-text p {
     font-size: 1.2rem;
 }
+
 .btn-learn {
     background-color: black;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
+}
+
+.about-section {
+    height: 100vh;
+    padding: 10% 10%;
+}
+
+.services-section {
+    height: 65vh;
+    padding: 10% 10%;
+}
+
+.plan-section {
+    height: 80vh;
+    padding: 10% 10%;
+}
+
+.team-section {
+    height: 80vh;
+    padding: 10% 10%;
+}
+
+.gallery-section {
+    height: 100vh;
+    padding: 10% 10%;
+}
+
+.review-section {
+    height: 40vh;
+    padding: 10% 10%;
+}
+
+.card ul {
+    text-align: left;
 }
 
 /* Plan */
@@ -105,4 +145,11 @@ img {
     margin: 10px 0; /* Adjusted margin */
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.full-height {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
