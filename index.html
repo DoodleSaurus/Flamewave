@@ -34,14 +34,23 @@
     </nav>
     
     <!-- Welcome Page -->
-    <section id="welcome" class="welcome-section">
-        <div class="row w-100 align-items-center">
-            <div class="col-md-6 welcome-image">
-                <dotlottie-player src="https://lottie.host/dcaba3fc-05da-431c-b7bf-6d1336a7a2eb/O6rUHZGbBl.lottie" background="transparent" speed="1" style="width: 750px; height: 300px" loop autoplay></dotlottie-player>
-            </div>
-            <div class="col-md-6 welcome-text">
-                <h1>Give Energy <br> to your Motion</h1>
-                <p>Trasforma ogni movimento in pura energia</p>
+        <section id="welcome" class="welcome-section py-5">
+            <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <dotlottie-player 
+                        src="https://lottie.host/dcaba3fc-05da-431c-b7bf-6d1336a7a2eb/O6rUHZGbBl.lottie" 
+                        background="transparent" 
+                        speed="1" 
+                        style="width: 100%; max-width: 750px; height: auto;" 
+                        loop 
+                        autoplay>
+                    </dotlottie-player>
+                </div>
+                <div class="col-lg-6 text-center text-lg-start">
+                    <h1 class="fw-bold">Give Energy <br> to your Motion</h1>
+                    <p class="lead">Trasforma ogni movimento in pura energia</p>
+                </div>
             </div>
         </div>
     </section>
@@ -70,14 +79,14 @@
     </section>
     
     <!-- Services -->
-    <section id="services" class="text-center services-section services-text primarycolorbg full-height">
+    <section id="services" class="text-center services-section services-text full-height">
         <h2>Servizi</h2>
         <p>Descrizione dei servizi offerti.</p>
         <div class="row">
             <div class="col-md-3">
-                <div class="card p-3">
-                    <img src="img/trainer.png" class="card-img-top" alt="Service 1">
-                    <h5 class="mt-3">Personal Training</h5>
+                <div class="serviceCard card p-3">
+                    <img src="img/trainer.png" class="card-img-top imgCard" alt="Service 1">
+                    <h5 class="mt-3"><b>Personal Training</b></h5>
                     <ul>
                         <li>Allenamenti personalizzati</li>
                         <li>Monitoraggio progressi</li>
@@ -86,9 +95,9 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="card p-3">
-                    <img src="img/people.png" class="card-img-top" alt="Service 2">
-                    <h5 class="mt-3">Corsi di Gruppo</h5>
+                <div class="serviceCard card p-3">
+                    <img src="img/people.png" class="card-img-top imgCard" alt="Service 2">
+                    <h5 class="mt-3"><b>Corsi di Gruppo</b></h5>
                     <ul>
                         <li>Yoga e Pilates</li>
                         <li>HIIT e Cardio</li>
@@ -97,9 +106,9 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="card p-3">
-                    <img src="img/cutlery.png" class="card-img-top" alt="Service 3">
-                    <h5 class="mt-3">Nutrizione</h5>
+                <div class="serviceCard card p-3">
+                    <img src="img/cutlery.png" class="card-img-top imgCard" alt="Service 3">
+                    <h5 class="mt-3"><b>Nutrizione</b></h5>
                     <ul>
                         <li>Piani alimentari</li>
                         <li>Consulenza esperti</li>
@@ -108,9 +117,9 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="card p-3">
-                    <img src="img/weight.png" class="card-img-top" alt="Service 4">
-                    <h5 class="mt-3">Wellness</h5>
+                <div class="serviceCard card p-3">
+                    <img src="img/weight.png" class="card-img-top imgCard" alt="Service 4">
+                    <h5 class="mt-3"><b>Benessere</b></h5>
                     <ul>
                         <li>Sauna e Spa</li>
                         <li>Massaggi rilassanti</li>
@@ -126,10 +135,11 @@
         <h2>Piani</h2>
         <div class="row">
             <div class="col-md-3">
-                <div class="card">
+                <div>
                     <div class="card-body">
                         <img src="img/fuoco1.png" class="card-img-top" alt="Basic Plan">
-                        <h5 class="card-title mt-3">Free Spirit</h5>
+                        <h5 class="card-title mt-3"><b>Free Spirit</b></h5>
+                        <h2 class="pricing">39.99&#8364;</h2>
                         <p>Tutto secondo i tuoi ritmi!</p>
                         <ul>
                             <li>Esplora differenti discipline</li>
@@ -139,10 +149,11 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="card">
+                <div>
                     <div class="card-body">
                         <img src="img/fuoco2.png" class="card-img-top" alt="Standard Plan">
-                        <h5 class="card-title mt-3">Basic Flame</h5>
+                        <h5 class="card-title mt-3"><b>Basic Flame</b></h5>
+                        <h2 class="pricing">59.99&#8364;</h2>
                         <p>Ideale per il primo approccio al fitness!</p>
                         <ul>
                             <li>Accesso alle attrezzature di base e corsi</li>
@@ -153,10 +164,11 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="card">
+                <div>
                     <div class="card-body">
                         <img src="img/fuoco3.png" class="card-img-top" alt="Premium Plan">
-                        <h5 class="card-title mt-3">Blazer</h5>
+                        <h5 class="card-title mt-3"><b>Blazer</b></h5>
+                        <h2 class="pricing">79.99&#8364;</h2>
                         <p class="card-text">Porta l'allenamento ad un livello successivo!</p>
                         <ul>
                             <li>Accesso a tutte le strutture e corsi</li>
@@ -166,23 +178,63 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="card">
+                <div>
                     <div class="card-body">
                         <img src="img/fuoco4.png" class="card-img-top" alt="VIP Plan">
-                        <h5 class="card-title mt-3">Vulcan</h5>
+                        <h5 class="card-title mt-3"><b>Vulcan</b></h5>
+                        <h2 class="pricing">99.99&#8364;</h2>
                         <p class="card-text">Per i nostri atleti e appassionati!</p>
                         <ul>
                             <li>Programmi di allenamento ad alta intensità</li>
                             <li>Accesso illimitato a tutte le strutture avanzate</li>
                             <li>Consulenze nutrizionali illimitate</li>
+                            <li>Buffet gratuito<br><i>(tranne il fine settimana)</i></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- team -->
+    <section id="services" class="text-center services-section services-text full-height">
+        <h2>I Nostri Fondatori...</h2>
+        <p>Il nostro team è composto da professionisti esperti e appassionati, pronti a guidarti nel tuo percorso di fitness e benessere. Con anni di esperienza e una dedizione incrollabile, siamo qui per aiutarti a raggiungere i tuoi obiettivi.</p>
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+                <div class="card cardTeam">
+                    <img src="img/carl.jpg" class="card-img-top" alt="Carl Harvey Miguel">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Carl Harvey Miguel</h5>
+                        <p class="card-text">Developer</p>
+                        <p>Programmatore, musicista, produttore musicale, scrittore, cuoco. ha vinto 100 grammy (nei sogni). ha fatto la cena con snoop dogg (sempre nei sogni)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="img/vito.jpg" class="card-img-top" alt="Vito Albergo">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Vito Albergo</h5>
+                        <p class="card-text">Developer</p>
+                        <p>Appassionato di informatica e con una grande voglia di imparare</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="img/spidnik.png" class="card-img-top" alt="Antonio Dentamaro">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Antonio Dentamaro</h5>
+                        <p class="card-text">CEO</p>
+                        <p>Junior Game Designer<br>(Self-Proclaimed)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     
-    <!-- Team -->
+    <!-- Team
     <section id="team" class="my-5 team-section primarycolorbg full-height">
         <div class="row">
             <h2 class="text-center">Team</h2>
@@ -225,42 +277,52 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <!-- Gallery -->
-    <section id="gallery" class="container gallery-section my-5 full-height">
-        <h2 class="text-center">Gallery</h2>
-        <div id="carouselGallery" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/palestraInterno1.png" class="d-block w-100" alt="Gallery Image 1" height="727px">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/palestraInterno2.png" class="d-block w-100" alt="Gallery Image 2" height="727px">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/palestraInterno3.png" class="d-block w-100" alt="Gallery Image 3" height="727px">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/palestraInterno4.png" class="d-block w-100" alt="Gallery Image 4" height="727px">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/palestraInterno5.png" class="d-block w-100" alt="Gallery Image 5" height="727px">
+    <!-- Review -->
+    <section id="review" class="text-center my-5 review-section full-height">
+        <h2>Review</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="img/VitoArcangeloCarulli.png" class="card-img-top rounded-circle mx-auto mt-3" alt="Reviewer 1" style="width: 100px; height: 100px;">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Vito Arcangelo Carulli</b></h5>
+                        <p class="card-text"><i>"FlameWave è il bilancio perfetto del benessere! Qui, ogni minuto speso ad allenarsi è un vero e proprio attivo nello stato patrimoniale della salute. Gli istruttori? Veri esperti in riclassificazione del tempo e dell'energia, garantendo un conto economico sempre positivo. Gli indici di performance? Altissimi, con un ROI che farebbe invidia a qualsiasi investimento finanziario. FlameWave è la palestra ideale per chi vuole ottimizzare il proprio capitale umano!"</i></p>
+                    </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselGallery" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselGallery" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="img/AnnaBoccardi.png" class="card-img-top rounded-circle mx-auto mt-3" alt="Reviewer 2" style="width: 100px; height: 100px;">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Anna Boccardi</b></h5>
+                        <p class="card-text"><i>"Se fosse un tribunale, FlameWave sarebbe il giudice supremo del fitness! Gli istruttori sono come avvocati difensori, sempre pronti a far valere i tuoi diritti al benessere. Qui l'unica sentenza è: allenarsi con determinazione e costanza!"</i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="img/MicheleLacriola.png" class="card-img-top rounded-circle mx-auto mt-3" alt="Reviewer 3" style="width: 100px; height: 100px;">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Michele Lacriola</b></h5>
+                        <p class="card-text"><i>"Allenarsi a FlameWave è come vivere l'epica delle due guerre mondiali: un percorso duro ma gratificante, dove ogni goccia di sudore è una battaglia vinta. Gli istruttori sono come i grandi generali, guidandoti verso la vittoria della forma fisica. E se Pascoli e D'Annunzio fossero qui oggi, sicuramente scriverebbero poesie e prose ispirate al coraggio e alla determinazione che si respirano in questa palestra. FlameWave è un viaggio epico nella storia del fitness, dove ogni allenamento è un capitolo avvincente."</i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="img/MicheleLoconsole.png" class="card-img-top rounded-circle mx-auto mt-3" alt="Reviewer 3" style="width: 100px; height: 100px;">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Michele Loconsole</b></h5>
+                        <p class="card-text"><i>"Allenarsi a FlameWave è come compiere un pellegrinaggio verso il benessere. Ogni allenamento è un atto di fede nella propria salute, come una moderna Via Crucis che porta alla redenzione fisica. Gli istruttori sono come guide spirituali, pronti a sostenerti in ogni passo del tuo cammino. Se pensiamo alla Resurrezione, FlameWave è il luogo dove si può rinascere a nuova vita, ritrovando l'equilibrio tra corpo e spirito."</i></p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Review -->
-    <section id="review" class="my-5 review-section primarycolorbg full-height">
+    <!-- <section id="review" class="my-5 review-section primarycolorbg full-height">
         <h2 class="text-center">Review</h2>
         <div class="row">
             <div class="col-md-3">
@@ -300,7 +362,47 @@
                 </div>
             </div>
         </div>
-    </section>    
+    </section>     -->
+        <!-- Gallery -->
+    <section id="gallery" class="container gallery-section my-5">
+        <h2 class="text-center">Gallery</h2>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/palestraInterno1.png" class="d-block w-100" alt="interno della palestra" style="object-fit: cover; height: 500px;">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/palestraInterno2.png" class="d-block w-100" alt="interno della palestra" style="object-fit: cover; height: 500px;">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/palestraInterno3.png" class="d-block w-100" alt="interno della palestra" style="object-fit: cover; height: 500px;">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/palestraInterno4.png" class="d-block w-100" alt="interno della palestra" style="object-fit: cover; height: 500px;">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/palestraInterno5.png" class="d-block w-100" alt="interno della palestra" style="object-fit: cover; height: 500px;">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!-- Map -->
+    <section id="location" class="my-5"></section>
+        <h2 class="text-center">Our Location</h2>
+        <div class="card text-center mx-auto" style="max-width: 800px;"></div>
+            <div class="card-body"></div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.562728813263!2d16.86560207519038!3d41.12224001240117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1347e85e2b9517ed%3A0x92f61de74e680439!2sVia%20Roberto%20da%20Bari%2C%20119%2C%2070122%20Bari%20BA!5e0!3m2!1sen!2sit!4v1738833527865!5m2!1sen!2sit" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
 
     <!-- Contact -->
     <section id="contact" class="container contact-section my-5">
@@ -333,6 +435,8 @@
         </div>
     </section>
 
+    <!-- footer -->
+
     <footer class="bg-dark text-white mt-5 p-4 text-center">
         <div class="container">
             <div class="row">
@@ -361,14 +465,12 @@
             </div>
             <div class="row mt-4">
                 <div class="col-md-12">
-                    <p class="mb-0">&copy; 2025 FlameWave SRL. All Rights Reserved.</p>
+                    <p class="mb-0 text-white">&copy; 2025 FlameWave SRL. All Rights Reserved.</p>
                 </div>
             </div>
         </div>
     </footer>
     
-    
-
     <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>

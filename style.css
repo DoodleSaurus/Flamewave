@@ -153,3 +153,32 @@ img {
     flex-direction: column;
     justify-content: center;
 }
+
+/* media queires */
+
+/* XL <= 1200px */
+
+@media screen and (max-width: 1200px) {
+    .cardTeam .card-body{
+        padding: 0;
+    }
+
+    .gallery-section{
+        padding:0;
+    }
+  }
+
+  .pricing {
+    color: red;
+    font-size: 1.5rem;
+  }
+
+  .imgCard{
+    width: 50px;
+    margin: 10px auto;
+    object-fit: cover;
+  }
+
+  .serviceCard{
+    margin: 15% 0 0 0;
+  }
