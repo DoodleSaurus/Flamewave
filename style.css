@@ -1,184 +1,369 @@
-/* Stile generale */
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: black;
 }
 
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
     color: #333;
+    line-height: 1.6;
 }
 
-/* Navbar */
-.navbar {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    margin-bottom: 1rem;
 }
 
-/* Sezioni */
-section {
-    padding: 60px 0;
-}
-
-/* Titoli */
 h2 {
-    margin-bottom: 20px;
-    font-weight: bold;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
-/* Immagini */
-img {
-    max-width: 100%;
-    border-radius: 10px;
+p {
+    margin-bottom: 1.5rem;
 }
 
-/* Plan */
-#plan .col-md-3 {
-    padding: 20px;
-    background: #fff;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Team */
-#team .col-md-4 {
-    padding: 20px;
-    background: #f1f1f1;
-    margin: 10px;
-    border-radius: 10px;
-}
-
-/* Review */
-#review .col-md-4 {
-    padding: 20px;
-    background: #e9ecef;
-    margin: 10px;
-    border-radius: 10px;
-}
-
-/* Contact */
-#contact .col-md-6 {
-    padding: 20px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.primarycolorbg{
+/* Utility Classes */
+.primarycolorbg {
     background-color: #e7772b;
-}
-
-.welcome-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 80vh;
-    background-color: #e7772b;
-    padding: 0 10%;
-}
-.welcome-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 0 35px 35px 0;
-}
-.welcome-text {
-    padding: 20px;
-    text-align: left;
-}
-.welcome-text h1 {
-    font-size: 3rem;
-    font-weight: bold;
-}
-.welcome-text p {
-    font-size: 1.2rem;
-}
-
-.btn-learn {
-    background-color: black;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-.about-section {
-    height: 100vh;
-    padding: 10% 10%;
-}
-
-.services-section {
-    height: 65vh;
-    padding: 10% 10%;
-}
-
-.plan-section {
-    height: 80vh;
-    padding: 10% 10%;
-}
-
-.team-section {
-    height: 80vh;
-    padding: 10% 10%;
-}
-
-.gallery-section {
-    height: 100vh;
-    padding: 10% 10%;
-}
-
-.review-section {
-    height: 40vh;
-    padding: 10% 10%;
-}
-
-.card ul {
-    text-align: left;
-}
-
-/* Plan */
-#plan .col-md-3 {
-    padding: 20px;
-    background: #fff;
-    margin: 10px 0; /* Adjusted margin */
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .full-height {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-/* media queires */
+/* Navbar */
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0.8rem 0;
+}
 
-/* XL <= 1200px */
+.navbar-brand img {
+    height: 50px;
+    width: auto;
+}
 
-@media screen and (max-width: 1200px) {
-    .cardTeam .card-body{
-        padding: 0;
-    }
+/* Sections */
+section {
+    padding: 5rem 0;
+    position: relative;
+}
 
-    .gallery-section{
-        padding:0;
-    }
-  }
+/* Welcome Section */
+.welcome-section {
+    background-color: #e7772b;
+    color: white;
+    padding: 4rem 0;
+}
 
-  .pricing {
-    color: red;
-    font-size: 1.5rem;
-  }
+.welcome-text h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
 
-  .imgCard{
-    width: 50px;
-    margin: 10px auto;
+.welcome-text p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* About Section */
+.about-section {
+    background-color: white;
+}
+
+.about-section .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.about-section .card:hover {
+    transform: translateY(-5px);
+}
+
+/* Services Section */
+.services-section {
+    background-color: #f8f9fa;
+}
+
+.serviceCard {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin: 1rem 0;
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+.serviceCard:hover {
+    transform: translateY(-5px);
+}
+
+.serviceCard ul {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+.serviceCard li {
+    margin-bottom: 0.8rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.serviceCard li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #e7772b;
+}
+
+.imgCard {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 1.5rem;
+    display: block;
+}
+
+/* Plan Section */
+.plan-section {
+    background-color: white;
+}
+
+#plan .col-md-3 {
+    padding: 2rem;
+    background: #fff;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+#plan .col-md-3:hover {
+    transform: translateY(-5px);
+}
+
+.pricing {
+    color: #e7772b;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+/* Team Section */
+.cardTeam {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+.cardTeam:hover {
+    transform: translateY(-5px);
+}
+
+.cardTeam img {
+    border-radius: 10px 10px 0 0;
+    height: 250px;
     object-fit: cover;
-  }
+}
 
-  .serviceCard{
-    margin: 15% 0 0 0;
-  }
+/* Review Section */
+.review-section {
+    background-color: #f8f9fa;
+}
+
+#review .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+#review .card:hover {
+    transform: translateY(-5px);
+}
+
+#review .card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #e7772b;
+}
+
+/* Gallery Section */
+.gallery-section {
+    background-color: white;
+}
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #f8f9fa;
+}
+
+#contact .col-md-6 {
+    padding: 2rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact img {
+    border-radius: 10px;
+}
+
+/* Plan Section Styles */
+.plan-section {
+    background-color: #f8f9fa;
+}
+
+.plan-card {
+    transition: all 0.3s ease;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.plan-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+.popular-plan {
+    border: 2px solid #e7772b;
+}
+
+.popular-plan .card-body {
+    padding-top: 2rem !important;
+}
+
+.pricing {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #e7772b;
+}
+
+.pricing span {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #6c757d;
+}
+
+/* Add Font Awesome for icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 3rem 0;
+}
+
+footer a {
+    color: #e7772b;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ff8c42;
+}
+
+footer ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+footer li {
+    margin-bottom: 0.5rem;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #e7772b;
+    border-color: #e7772b;
+    padding: 0.5rem 1.5rem;
+}
+
+.btn-primary:hover {
+    background-color: #d46922;
+    border-color: #d46922;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .welcome-text h1 {
+        font-size: 2.5rem;
+    }
+    
+    .cardTeam .card-body {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    section {
+        padding: 4rem 0;
+    }
+    
+    .welcome-section {
+        text-align: center;
+    }
+    
+    .full-height {
+        min-height: auto;
+        padding: 4rem 0;
+    }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    .welcome-text h1 {
+        font-size: 2rem;
+    }
+    
+    .carousel-item img {
+        height: 300px;
+    }
+    
+    .imgCard {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 576px) {
+    section {
+        padding: 3rem 0;
+    }
+    
+    .welcome-text h1 {
+        font-size: 1.8rem;
+    }
+    
+    .welcome-text p {
+        font-size: 1rem;
+    }
+    
+    .pricing {
+        font-size: 1.5rem;
+    }
+}
